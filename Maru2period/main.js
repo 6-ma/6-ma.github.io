@@ -1,8 +1,9 @@
-document.getElementById("button").onclick=function(){
+function buttonClicj(){
     var Text = document.getElementById("input").value;
     Text = Text.replace("。",".");
     Text = Text.replace("，",",");
 };
+document.getElementById("button").addEventListener("click",buttonClick);
 var blob=new Blob([Text],{type:"text/plain"});
 const link=document.createElement("a");
 link.href=URL.createObjectURL(blob);
