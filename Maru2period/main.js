@@ -1,4 +1,4 @@
-window.onload = function () {
+window.onload = onload () {
 function buttonClick(){
     var Text = document.getElementById("input").value;
     Text = Text.replace("。",".");
